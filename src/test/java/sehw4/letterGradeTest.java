@@ -86,7 +86,7 @@ public class letterGradeTest {
 		};
 		System.setIn(mis);
 		getLetterGrade.main(new String[0]);
-
+		assertEquals("Enetr the score = ", outContent.toString().replaceAll("\r|\n", ""));
 	}
 
 }
