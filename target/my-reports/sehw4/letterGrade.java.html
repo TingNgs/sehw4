@@ -22,5 +22,21 @@ import java.io.InputStreamReader;
 <span class="fc" id="L22">		return grade;</span>
 	}
 
+	public static void main(String[] args) {
+<span class="fc" id="L26">		System.out.print(&quot;Enetr the score = &quot;);</span>
+
+		try {
+<span class="fc" id="L29">			InputStreamReader isr = new InputStreamReader(System.in);</span>
+<span class="fc" id="L30">			BufferedReader br = new BufferedReader(isr);</span>
+<span class="fc" id="L31">			int score = Integer.parseInt(br.readLine());</span>
+<span class="fc" id="L32">			char grade = letterGrade(score);</span>
+<span class="fc" id="L33">			System.out.println(&quot;The grade of &quot; + score + &quot; is &quot; + grade);</span>
+<span class="fc" id="L34">		} catch (NumberFormatException ex) {</span>
+<span class="fc" id="L35">			System.out.println(&quot;Not an integer!&quot;);</span>
+<span class="fc" id="L36">		} catch (IOException e) {</span>
+<span class="fc" id="L37">			e.printStackTrace();</span>
+<span class="fc" id="L38">		}</span>
+<span class="fc" id="L39">	}</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
